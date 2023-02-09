@@ -1,17 +1,17 @@
 #
-# File:    ./tests/unit/test_data.py
+# File:    ./tests/unit/test_objects.py
 # Author:  Jiří Kučera <sanczes AT gmail.com>
 # Date:    2022-06-28 12:39:49 +0200
 # Project: vutils-python: Python language tools
 #
 # SPDX-License-Identifier: MIT
 #
-"""Test `vutils.python.data` module."""
+"""Test `vutils.python.objects` module."""
 
 from vutils.testing.testcase import TestCase
 from vutils.testing.utils import make_type
 
-from vutils.python.data import merge_data
+from vutils.python.objects import merge_data
 
 
 class MergeDataTestCase(TestCase):

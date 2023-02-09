@@ -18,14 +18,14 @@ $ pip install vutils-python
 
 Functions and classes provided by `vutils-python` can be accessed by importing
 following submodules:
-* `vutils.python.data`
+* `vutils.python.objects`
 
 Each of these submodules is described in the following subsections.
 
-### Data Objects Manipulation
+### Objects Manipulation
 
-Functions and classes that deals with Python data objects, defined in
-`vutils.python.data` submodule, are
+Functions and classes that deals with Python objects, defined in
+`vutils.python.objects` submodule, are
 * `merge_data(dest, src)` merges data from `src` to `dest`. `src` and `dest`
   must be of the same type. Examples:
   ```python
