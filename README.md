@@ -46,3 +46,8 @@ Functions and classes that deals with Python objects, defined in
 
   merge_data({}, [1])  # TypeError
   ```
+* `ensure_key(mapping, key, default)` ensures `mapping` has a `key` of the same
+  type a `default`. If `key` is not in `mapping`, store `default` to `mapping`
+  under it.
+* `ensure_no_key(mapping, key)` ensures `key` is not present in `mapping`.
+* `flatten(obj)` flattens `obj` recursively if it is `list` or `tuple`.
