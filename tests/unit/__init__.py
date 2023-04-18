@@ -6,4 +6,4 @@
 #
 # SPDX-License-Identifier: MIT
 #
-"""Unit tests for `vutils.python`."""
+"""Unit tests for :mod:`vutils.python`."""

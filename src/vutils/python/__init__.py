@@ -6,4 +6,4 @@
 #
 # SPDX-License-Identifier: MIT
 #
-"""`vutils.python` package."""
+""":mod:`vutils.python` package."""

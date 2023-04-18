@@ -6,7 +6,14 @@
 #
 # SPDX-License-Identifier: MIT
 #
-"""Test `vutils.python.objects` module."""
+"""
+Test :mod:`vutils.python.objects` module.
+
+.. |merge_data| replace:: :func:`~vutils.python.objects.merge_data`
+.. |ensure_key| replace:: :func:`~vutils.python.objects.ensure_key`
+.. |ensure_no_key| replace:: :func:`~vutils.python.objects.ensure_no_key`
+.. |flatten| replace:: :func:`~vutils.python.objects.flatten`
+"""
 
 from vutils.testing.testcase import TestCase
 from vutils.testing.utils import make_type
@@ -20,7 +27,7 @@ from vutils.python.objects import (
 
 
 class MergeDataTestCase(TestCase):
-    """Test case for `merge_data`."""
+    """Test case for |merge_data|."""
 
     __slots__ = ()
 
@@ -72,7 +79,7 @@ class MergeDataTestCase(TestCase):
 
 
 class EnsureKeyTestCase(TestCase):
-    """Test case for `ensure_key`."""
+    """Test case for |ensure_key|."""
 
     __slots__ = ()
 
@@ -110,7 +117,7 @@ class EnsureKeyTestCase(TestCase):
 
 
 class EnsureNoKeyTestCase(TestCase):
-    """Test case for `ensure_no_key`."""
+    """Test case for |ensure_no_key|."""
 
     __slots__ = ()
 
@@ -124,7 +131,7 @@ class EnsureNoKeyTestCase(TestCase):
 
 
 class FlattenTestCase(TestCase):
-    """Test case for `flatten`."""
+    """Test case for |flatten|."""
 
     __slots__ = ()
 
