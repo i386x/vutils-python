@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.1
+
+* Code cleanup
+
 ## 0.2.0
 
 * Rename `vutils.python.data` to `vutils.python.objects`
