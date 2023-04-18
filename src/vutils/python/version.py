@@ -6,6 +6,10 @@
 #
 # SPDX-License-Identifier: MIT
 #
-"""Holds `vutils.python` version."""
+"""
+Holds :mod:`vutils.python` version.
+
+:const __version__: The package version
+"""
 
 __version__: str = "0.2.0"

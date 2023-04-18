@@ -6,7 +6,7 @@
 #
 # SPDX-License-Identifier: MIT
 #
-"""Test `vutils.python.version` module."""
+"""Test :mod:`vutils.python.version` module."""
 
 from vutils.testing.testcase import TestCase
 

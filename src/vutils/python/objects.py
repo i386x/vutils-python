@@ -12,8 +12,10 @@ from typing import TYPE_CHECKING, cast
 
 if TYPE_CHECKING:
     from collections.abc import Callable, Generator, MutableMapping
+    from typing import TypeVar
 
-    from vutils.python import _KT, _VT
+    _KT = TypeVar("_KT")
+    _VT = TypeVar("_VT")
 
 
 def merge_data(dest: object, src: object) -> None:
@@ -43,16 +45,17 @@ def ensure_key(
     mapping: "MutableMapping[_KT, _VT]", key: "_KT", default: "_VT"
 ) -> None:
     """
-    Ensure <mapping> has a <key> of the same type as <default>.
+    Ensure :arg:`mapping` has a :arg:`key` of the same type as :arg:`default`.
 
     :param mapping: The mapping
     :param key: The key
-    :param default: The default value if <key> is not set
-    :raises TypeError: when the value under the <key> cannot be converted to
-        the type that has <default>
+    :param default: The default value if :arg:`key` is not set
+    :raises TypeError: when the value under the :arg:`key` cannot be converted
+        to the type that has :arg:`default`
 
-    If <key> is present in <mapping>, ensure the value is of a same type as
-    <default>. Otherwise, store <default> to <mapping> under <key>.
+    If :arg:`key` is present in :arg:`mapping`, ensure the value is of a same
+    type as :arg:`default`. Otherwise, store :arg:`default` to :arg:`mapping`
+    under :arg:`key`.
     """
     typecls: "type[_VT]" = type(default)
     if key in mapping and not isinstance(mapping[key], typecls):
@@ -64,7 +67,7 @@ def ensure_key(
 
 def ensure_no_key(mapping: "MutableMapping[_KT, _VT]", key: "_KT") -> None:
     """
-    Ensure <key> is not present in <mapping>.
+    Ensure :arg:`key` is not present in :arg:`mapping`.
 
     :param mapping: The mapping
     :param key: The key
@@ -75,13 +78,13 @@ def ensure_no_key(mapping: "MutableMapping[_KT, _VT]", key: "_KT") -> None:
 
 def flatten(obj: object) -> "Generator[object, None, None]":
     """
-    Flatten <obj> recursively.
+    Flatten :arg:`obj` recursively.
 
     :param obj: The object to be flattened
-    :return: the generator that yields items from flattened <obj>
+    :return: the generator that yields items from flattened :arg:`obj`
 
-    If <obj> is :class:`list` or :class:`tuple`, yield items from <obj>'s
-    flattened element. Otherwise, yield <obj>.
+    If :arg:`obj` is :class:`list` or :class:`tuple`, yield items from
+    :arg:`obj`'s flattened element. Otherwise, yield :arg:`obj`.
     """
     if isinstance(obj, (tuple, list)):
         for elem in obj:
